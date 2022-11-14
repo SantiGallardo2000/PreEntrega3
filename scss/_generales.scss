@@ -1,0 +1,147 @@
+@mixin displayAndtext {
+    display: block;
+    text-align: center;
+}
+
+@mixin displayAnditems {
+    display: flex;
+    align-items: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  body {
+    margin: 0;
+  }
+  
+  /**LOGOS**/
+  
+  .logo {
+    @include displayAnditems;
+  }
+  
+  .logoCompania {
+    height: 50px;
+    width: 50px;
+    margin: auto;
+    padding: auto;
+  }
+  
+  /**MENU NAVEGACION**/
+  
+  ul {
+    margin-left: 120px;
+    text-transform: uppercase;
+  
+    a {
+      margin-left: 50px;
+    }
+  }
+
+  #bajocarrousel {
+    margin-top: 150px;
+  }
+  
+  .contcarrousel .textobajocarrousel {
+    @include displayAndtext;
+    margin-bottom: 150px;
+  }
+  
+
+/**ESTAMOS TRABAJANDO**/
+
+#mantenimiento {
+    margin-top: 150px;
+  }
+  
+  #proximamenteImg {
+    width: auto;
+    height: auto;
+    display: block;
+    margin: auto;
+  }
+  
+  .container .textomantenimiento {
+    @include displayAndtext();
+    margin-top: 50px;
+  }
+  /**FOOTER**/
+
+.footersito {
+    width: 100%;
+    background-color: $color-dos;
+  
+    .grupo-1 {
+      width: 100%;
+      max-width: 1200px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 50px;
+      padding: 45px 0px;
+  
+      .box {
+        figure {
+          width: 100%;
+          height: 100%;
+          @include displayAnditems;
+          justify-content: center;
+  
+          img {
+            width: 150px;
+          }
+        }
+  
+        h2 {
+          color: $color-uno;
+          font-size: 20px;
+        }
+  
+        p {
+          color: $color-uno;
+          margin-bottom: 10px;
+        }
+      }
+  
+      .red-social a {
+        display: inline-block;
+        text-decoration: none;
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+        color: $color-dos;
+        margin-right: 10px;
+        background-color: $color-uno;
+        text-align: center;
+        transition: all 300ms ease;
+  
+        &:hover {
+          color: $color-tres;
+        }
+      }
+    }
+  
+    .grupo-2 {
+      background-color: $color-uno;
+      padding: 15px 10px;
+      text-align: center;
+      color: $color-dos;
+  
+      small {
+        font-size: 15px;
+      }
+    }
+  }
+  
+  @media screen and (max-width: 900px) {
+    .footersito .grupo-1 {
+      width: 90%;
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 30px;
+      padding: 35px 0px;
+    }
+  }

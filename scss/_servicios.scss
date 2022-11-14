@@ -1,0 +1,116 @@
+@mixin displayPosition {
+    display: flex;
+    position: relative;
+}
+
+/**SERVICIOS **/
+
+#servicios1 {
+    margin-top: 120px;
+  }
+  
+  #miservicios {
+    color: $color-uno;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+  }
+  
+  .servicios {
+    @include displayPosition;
+    border: .1rem solid $color-dos;
+    padding: 32px;
+    color: $color-dos;
+    background: $color-uno;
+  
+    h4 {
+      margin-bottom: 20px;
+    }
+  
+    .icon {
+      width: 100px;
+      height: 100px;
+      display: flex;
+      flex: none;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      color: $color-dos;
+      border-radius: 30px;
+      margin-right: 16px;
+    }
+  }
+  
+  .contenedor {
+    .machete {
+      .guia {
+        transition: 0.5s;
+  
+        &.guia1 {
+          @include displayPosition;
+          background: $color-tres;
+          z-index: 1;
+          justify-content: center;
+          align-items: center;
+          transform: translateY(90px);
+          height: 150px;
+        }
+      }
+  
+      &:hover .guia.guia1 {
+        background: $color-uno;
+        transform: translateY(0px);
+      }
+  
+      .guia.guia1 .contenedor2 {
+        opacity: 0.2;
+        transition: 0.5s;
+      }
+    }
+  
+    .carta:hover .guia.guia1 .contenedor2 {
+      opacity: 1;
+    }
+  
+    .machete {
+      &:hover .guia.guia1 #logito1 {
+        display: none;
+      }
+  
+      .guia {
+        &.guia1 .contenedor2 {
+          i, h3 {
+            margin: 10px 0 10px;
+            padding: 0;
+          }
+        }
+  
+        &.guia2 {
+          @include displayPosition;
+          background: $color-dos;
+          justify-content: center;
+          align-items: center;
+          box-sizing: border-box;
+          box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+          transform: translateY(-60px);
+        }
+      }
+  
+      &:hover .guia.guia2 {
+        transform: translateY(0);
+      }
+  
+      .guia.guia2 .contenedor2 p {
+        margin: 0;
+        padding: 0;
+      }
+    }
+  }
+  
+  #logito, #logito1 {
+    display: flex;
+    justify-content: center;
+  }
+  
+  h3 {
+    color: $color-dos;
+  }
