@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="./css/estilo.css">
 </head>
 <body>
+ <!-- MENU DE NAVEGACION -->
+ <header>
   <nav class="navbar navbar-expand-lg bg-light">
     <div class="container-fluid">
       <a class="navbar-brand" href="./index.html">BURTON BARBERIA</a>
@@ -34,32 +36,33 @@
             <a class="nav-link" href="./preguntas.html">Preguntas</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./turnos.html">Turnos</a>
+            <a class="nav-link" href="./tendencias.html">Tendencias</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="./contacto.html">Contacto</a>
           </li>
       </div>
   </nav>
-        <main>
+ </header> 
+  <main>
+    <!-- SERVICIOS -->
     <section>
       <div class="container" id="servicios1">
         <div class="row">
-          <div class="col-12" data-aos="fade-left">
+          <div class="col-12" data-aos="fade-down">
             <div class="intro text-center">
               <div class="hr-linea"></div>
-                <h1 class="display-4" id="servicios2">Mis servicios</h1>
+                <h1 id="servicios2">Servicios</h1>
             </div>
           </div>
-        </div>  
+        </div>
+
         <div class="row">
           <div class="col-md-4 mt-5 contenedor" data-aos="fade-up" data-aos-delay="100">
             <div class="machete">
               <div class="guia guia1">
                 <div class="contenedor2">
-                  <i class="fa-solid fa-2x fa-laptop-code" id="logito"></i>
-                  <h3>Cortes de pelo</h3>
-                  <i class="fa-solid fa-chevron-down" id="logito1"></i>
+                  <h3 class="h3Servicios">Cortes de pelo</h3>
                 </div>
               </div>
               <div class="guia guia2">
@@ -67,15 +70,14 @@
                   <p>Clásico o moderno. Marcamos tendencia combinando máquinas y tijeras.</p>
                 </div>
               </div>
-        </div>
-      </div>
+           </div>
+         </div>
+
       <div class="col-md-4 mt-5 contenedor" data-aos="fade-left" data-aos-delay="150">
         <div class="machete">
           <div class="guia guia1">
             <div class="contenedor2">
-              <i class="fa-solid fa-2x fa-mobile-screen" id="logito"></i>
-              <h3>Barba</h3>
-              <i class="fa-solid fa-chevron-down" id="logito1"></i>
+              <h3 class="h3Servicios">Barba</h3> 
             </div>
           </div>
           <div class="guia guia2">
@@ -83,15 +85,14 @@
               <p>Afeitada tradicional o recorte de barba. Contamos con el servicio de toalla caliente</p>
             </div>
           </div>
-    </div>
-  </div>
+        </div>
+      </div>
+
   <div class="col-md-4 mt-5 contenedor" data-aos="fade-right" data-aos-delay="200">
     <div class="machete">
       <div class="guia guia1">
         <div class="contenedor2">
-          <i class="fa-solid fa-2x fa-code" id="logito"></i>
-          <h3>Color</h3>
-          <i class="fa-solid fa-chevron-down" id="logito1"></i>
+          <h3 class="h3Servicios">Color</h3>
         </div>
       </div>
       <div class="guia guia2">
@@ -99,12 +100,57 @@
           <p>Encontrar el tono justo para tu estilo es nuestro objetivo, las tendencias y los tonos cambian, animate vos también.</p>
         </div>
       </div>
-</div>
-</div>
+     </div>
+   </div>
+
+   <div class="col-md-4 mt-5 contenedor" data-aos="fade-up" data-aos-delay="150">
+    <div class="machete">
+      <div class="guia guia1">
+        <div class="contenedor2">
+          <h3 class="h3Servicios">Alisados</h3>
+        </div>
+      </div>
+      <div class="guia guia2">
+        <div class="contenedor2">
+          <p>A veces es necesario. Date una vuelta y lo evaluamos.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4 mt-5 contenedor" data-aos="fade-up" data-aos-delay="150">
+    <div class="machete">
+      <div class="guia guia1">
+        <div class="contenedor2">
+          <h3 class="h3Servicios">Decoloracion</h3>
+        </div>
+      </div>
+      <div class="guia guia2">
+        <div class="contenedor2">
+          <p>Encontrar el tono justo para tu estilo es nuestro objetivo.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4 mt-5 contenedor" data-aos="fade-up" data-aos-delay="150">
+    <div class="machete">
+      <div class="guia guia1">
+        <div class="contenedor2">
+          <h3 class="h3Servicios">Niños</h3>
+        </div>
+      </div>
+      <div class="guia guia2">
+        <div class="contenedor2">
+          <p>Los peques saben lo que quieren, por eso atendemos sus antojos.</p>
+        </div>
+      </div>
+    </div>
+  </div>
   </section>
-     </main>
-<!--FOOTER-->
-<footer class="footersito">
+  </main>
+ <!--FOOTER-->
+ <footer class="footersito">
   <div class="grupo-1">
       <div class="box">
           <figure>
@@ -131,7 +177,7 @@
   <div class="grupo-2">
       <small>&copy; 2022 <b>Santiago Gallardo</b> - Todos los Derechos Reservados.</small>
   </div>
-</footer>
+ </footer>
 <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 <!-- MDB -->

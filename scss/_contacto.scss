@@ -1,5 +1,10 @@
 /**FORMULARIO DE CONTACTO**/
 
+.h1Formulario {
+  margin-bottom: 25px;
+  text-align: center;
+ } 
+
 .h3formulario {
     color: $color-uno;
   }
@@ -15,12 +20,6 @@
     list-style: none;
     padding: 0;
   }
-  
-  .logoformulario {
-    text-align: center;
-    font-size: 3em;
-  }
-  
   .guia1 {
     box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.3);
   
@@ -44,18 +43,22 @@
         margin: 0;
         padding: 1em;
       }
-  
+      
       .block {
         grid-column: 1 / 3;
       }
-  
-      button, input, textarea {
+
+      button {
         width: 100%;
-        padding: .7em;
+        color: $color-dos;
+      }
+
+      input {
+        width: 100%;
         border: none;
         background: none;
         outline: 0;
-        color: $color-dos;
+        color: $color-uno;
         border-bottom: 1px solid $color-uno;
       }
   
@@ -70,13 +73,10 @@
           color: $color-uno;
           transition: background-color 1s ease-out;
           outline: 0;
-        }
-      }
+        } 
+      }  
     }
   }
-  
-  /*INFORMACION DE CONTACTO*/
-  
   .informacion {
     background: $color-cuatro;
   
@@ -85,8 +85,6 @@
       margin: 0 0 1rem 0;
     }
   }
-  
-  /*MEDIA QUERIES FORMULARIO*/
   @media (min-width: 1280px) {
     .guia1 {
       display: grid;

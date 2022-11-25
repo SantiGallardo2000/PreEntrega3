@@ -1,12 +1,11 @@
+/**SERVICIOS**/
 @mixin displayPosition {
-    display: flex;
-    position: relative;
+  display: flex;
+  position: relative;
 }
-
-/**SERVICIOS **/
-
 #servicios1 {
     margin-top: 120px;
+    margin-bottom: 120px;
   }
   
   #miservicios {
@@ -43,11 +42,11 @@
   .contenedor {
     .machete {
       .guia {
-        transition: 0.5s;
+        transition: 0.8s;
   
         &.guia1 {
           @include displayPosition;
-          background: $color-tres;
+          background: $color-uno;
           z-index: 1;
           justify-content: center;
           align-items: center;
@@ -57,18 +56,18 @@
       }
   
       &:hover .guia.guia1 {
-        background: $color-uno;
-        transform: translateY(0px);
+        background: $color-tres;
+        transform: translateY(2px);
       }
   
       .guia.guia1 .contenedor2 {
-        opacity: 0.2;
+        opacity: 1;
         transition: 0.5s;
       }
     }
   
     .carta:hover .guia.guia1 .contenedor2 {
-      opacity: 1;
+      opacity: 0;
     }
   
     .machete {
@@ -90,7 +89,6 @@
           justify-content: center;
           align-items: center;
           box-sizing: border-box;
-          box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
           transform: translateY(-60px);
         }
       }
@@ -111,6 +109,6 @@
     justify-content: center;
   }
   
-  h3 {
+  .h3Servicios {
     color: $color-dos;
   }
